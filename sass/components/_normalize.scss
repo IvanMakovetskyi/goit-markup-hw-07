@@ -45,6 +45,7 @@ Remove the margin in all browsers.
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -55,6 +56,20 @@ body {
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+a{
+  text-decoration: none;
+  font-family: Roboto;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+textarea{
+  resize: none;
 }
 
 /*

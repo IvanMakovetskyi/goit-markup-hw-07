@@ -72,10 +72,8 @@
 }
 
 .ss-link{
-    display: flex;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center;
-    align-items: center;
+    @extend %flexCenter;
+    transition: all 250ms $timing-function;
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -85,6 +83,6 @@
 
 .ss-link:hover,
 .ss-link:focus{
-    fill: #ffffff;
-    background-color: #2196F3;
+    fill: $primary-white-color;
+    background-color: $accent-color;
 }

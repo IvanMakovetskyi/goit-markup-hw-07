@@ -12,6 +12,7 @@
     transition: all 250ms $timing-function;
     padding: 6px 22px;
     border-radius: 4px;
+    margin-right: 8px;
 
     font-weight: 500;
     font-size: 16px;
@@ -19,10 +20,6 @@
 
     background-color: #F5F4FA;
     color: $text-color;
-}
-
-.list-nav__element:not(:last-child){
-    margin-right: 8px;
 }
 
 .list-nav__element:focus,

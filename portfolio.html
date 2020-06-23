@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
@@ -11,39 +11,38 @@
 <body>
     <!--Header-->
     <header>
-        <nav>
-            <div class="flex-div">
-                <a class="nav__name-company"><p><span class="name-company--blue">Web</span>Studio</p></a>
-                <ul class="nav">
-                    <li class="nav__element"><a class="nav__link " href="./index.html"><p class="company-nav">Студия</p></a></li>
-                    <li class="nav__element active"><a class="nav__link" href="./portfolio.html"><p class="portfolio-nav">Портфолио</p></a></li>
-                    <li class="nav__element"><a class="nav__link"><p class="contakts-nav">Контакты</p></a></li>
-                </ul>
-            </div>
-            <ul class="contacts">
-                <li class="contacts__element">
-                    <div class="contacts__text">
-                        <svg class="contackts__icon" width= "16px" height= "11px">
-                            <use href="./img/symbol-defs.svg#mail"></use>
-                        </svg>
-                        <a class="contacts__link contacts__link--right" href="info@devstudio.com">info@devstudio.com</a>
-                    </div>
-                </li>
-                <li class="contacts__element">
-                    <div class="contacts__text">
-                        <svg class="contackts__icon" width= "10px" height= "15px">
-                            <use href="./img/symbol-defs.svg#phone"></use>
-                        </svg>
-                        <a class="contacts__link" href="+380961111111">+38 096 111 11 11</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <div class="flex-div">
+            <a class="nav__name-company"><p><span class="name-company--blue">Web</span>Studio</p></a>
+            <nav class="nav">
+                <a class="nav__link active" href="./index.html"><p class="company-nav">Студия</p></a>
+                <a class="nav__link" href="./portfolio.html"><p class="portfolio-nav">Портфолио</p></a>
+                <a class="nav__link"><p class="contakts-nav">Контакты</p></a>
+            </nav>
+        </div>
+        <ul class="contacts">
+            <li class="contacts__element">
+                <div class="contacts__text">
+                    <svg class="contackts__icon mail" width= "16px" height= "11px">
+                        <use href="./img/symbol-defs.svg#mail"></use>
+                    </svg>
+                    <a class="contacts__link" href="info@devstudio.com">info@devstudio.com</a>
+                </div>
+            </li>
+            <li class="contacts__element">
+                <div class="contacts__text">
+                    <svg class="contackts__icon phone" width= "10px" height= "15px">
+                        <use href="./img/symbol-defs.svg#phone"></use>
+                    </svg>
+                    <a class="contacts__link" href="+380961111111">+38 096 111 11 11</a>
+                </div>
+            </li>
+        </ul>
     </header>
     <main class="our-projects">
         <h1 class="our-projects__title">Наші проекти</h1>
         <ul class="list-nav">
-            <li><a class="list-nav__element" href="">Все</a></li>                <li><a class="list-nav__element" href="">Веб-сайты</a></li>
+            <li><a class="list-nav__element" href="">Все</a></li>                
+            <li><a class="list-nav__element" href="">Веб-сайты</a></li>
             <li><a class="list-nav__element" href="">Приложения</a></li>
             <li><a class="list-nav__element" href="">Дизайн</a></li>
             <li><a class="list-nav__element" href="">Маркетинг</a></li>
@@ -146,14 +145,14 @@
         <div class="ftr">
             <!--Adress-->
             <address class="adress">
-                <a class="adress__name-company"><p><span class="name-company--blue">Web</span><span class="name-company--white">Studio</span></p></a>
-                <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p>
+                <a class="adress__name-company"><p><span class="name-company--blue">Web</span><span class="name-company--white">Studio</span></p></a> <br>
+                <p class="adress__text">г. Киев, пр-т Леси Украинки, 26</p> <br>
                 <a class="adress__link" href="info@example.com">info@example.com</a> <br>
                 <a class="adress__link" href="+380991111111">+38 099 111 11 11</a>
             </address>
-            <!--Go-->
-            <div class="go">
-                <h3 class="go__title">Присоединяйтесь</h3>
+            <!--Join-->
+            <div class="join">
+                <h3 class="join__title">Присоединяйтесь</h3>
                 <ul class="ss-list">
                     <li class="ss-list__element">
                         <a class="ss-link">
@@ -185,16 +184,16 @@
                     </li>
                 </ul>
             </div>
-            <!--Lets Go-->
-            <div class="lets-go">
-                <h3 class="lets-go__title">Подписаться на рассылку</h3>
-                <div class="lets-go__form">
-                <p class="lets-go__text">E-mail</p>
-                <button type="button" class="lets-go__btn" href="">Подписаться</button>
+            <!--Subscibe-->
+            <div class="subscribe">
+                <h3 class="subscribe__title">Подписаться на рассылку</h3>
+                <form class="subscribe__form">
+                    <input placeholder="E-mail" type="email" class="subscribe__input" >
+                    <button class="subscribe__btn"><span class="subscribe__text">Подписаться</span><svg width="24" height="24" class="clients-list__icon"><use href="./img/symbol-defs.svg#fly"></use></svg></button>
+                </form>
                 </div>
             </div>
         </div>
-        <p class="copyright">2020 | Developed by GoIT Students </p>
     </footer>
 </body>
 </html>
