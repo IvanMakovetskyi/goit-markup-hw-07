@@ -1,6 +1,5 @@
 .main-pynkts{
-    width: 1200px;
-    margin: 0 auto;
+    @extend %container;
     margin-bottom: 94px;
 }
 

@@ -1,8 +1,6 @@
 .occupation{
-    width: 1200px;
+    @extend %container;
     margin-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .occupation-list{

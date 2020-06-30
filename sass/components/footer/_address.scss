@@ -15,7 +15,7 @@ address{
 }
 
 .name-company--white{
-    color: #ffffff;
+    color: $primary-white-color;
     margin-left: 5px;
 }
 
@@ -26,7 +26,7 @@ address{
     font-size: 14px;
     line-height: 24px;
 
-    color: #ffffff;
+    color: $primary-white-color;
 }
 
 .adress__link{
