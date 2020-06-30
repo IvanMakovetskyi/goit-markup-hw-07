@@ -270,7 +270,18 @@ summary {
   display: list-item;
 }
 
-.flex-div, .nav, .contacts, .modal__close, .modal__button-send, .part-occupation__overlay, .ss-link, .overlay__text {
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main-pynkts, .occupation, .comand, .clients {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex-div, .nav, .contacts, .modal__close, .modal__button-send, .part-occupation__overlay, .ss-link, .clients-list__link, .overlay__text, .subscribe__input, .subscribe__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +360,7 @@ footer {
 
 .nav__link {
   display: inline-block;
-  padding: 32px 0;
+  padding: 33px 0;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
@@ -367,10 +378,17 @@ footer {
   color: #2196f3;
 }
 
+.active {
+  position: relative;
+}
+
 .active::after {
   content: "";
   display: block;
-  bottom: 100%;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   height: 4px;
   border-radius: 2px;
   background-color: #2196f3;
@@ -637,8 +655,6 @@ footer {
 }
 
 .main-pynkts {
-  width: 1200px;
-  margin: 0 auto;
   margin-bottom: 94px;
 }
 
@@ -690,10 +706,7 @@ footer {
 }
 
 .occupation {
-  width: 1200px;
   margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .occupation-list {
@@ -738,10 +751,7 @@ footer {
 
 .comand {
   padding-top: 94px;
-  width: 1200px;
   height: 700px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 94px;
 }
 
@@ -750,12 +760,12 @@ footer {
 }
 
 .comand__title {
-  margin-bottom: 50px;
+  font-weight: 700;
   font-size: 36px;
-  font-weight: 700px;
   line-height: 42px;
-  text-align: center;
   color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .personal {
@@ -824,20 +834,17 @@ footer {
 }
 
 .clients {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 95px;
   margin-bottom: 95px;
 }
 
 .clients__title {
-  margin-bottom: 50px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .clients-list {
@@ -847,24 +854,15 @@ footer {
 }
 
 .clients-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border, fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #afb1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 90px;
-  fill: #afb1B8;
+  fill: #afb1b8;
 }
 
 .clients-list__element:not(:last-child) {
@@ -875,8 +873,8 @@ footer {
 .clients-list__link:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  border: 1px solid #2196F3;
-  fill: #2196F3;
+  border: 1px solid #2196f3;
+  fill: #2196f3;
 }
 
 .our-projects {
@@ -1089,9 +1087,6 @@ address {
 }
 
 .subscribe__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1099,9 +1094,6 @@ address {
   width: 360px;
   margin-right: 10px;
   padding: 0px 12px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -1110,9 +1102,6 @@ address {
 }
 
 .subscribe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1121,12 +1110,6 @@ address {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #2196F3;
 }
 
