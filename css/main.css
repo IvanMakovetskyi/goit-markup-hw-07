@@ -879,10 +879,9 @@ footer {
 
 .our-projects {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  padding-top: 94px;
+  margin: 0 auto;
   margin-bottom: 95px;
 }
 
@@ -890,23 +889,27 @@ footer {
   display: none;
 }
 
+.our-projects__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .list-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 640px;
-  margin-top: 95px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.list-nav__element {
+.list-nav__link {
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 6px 22px;
   border-radius: 4px;
-  margin-right: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -914,8 +917,12 @@ footer {
   color: #212121;
 }
 
-.list-nav__element:focus,
-.list-nav__element:hover {
+.list-nav__element:not(:last-child) {
+  margin-right: 8px;
+}
+
+.list-nav__element:focus .list-nav__link,
+.list-nav__element:hover .list-nav__link {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #2196f3;
@@ -1015,7 +1022,7 @@ address {
   margin-bottom: 10px;
   height: 28px;
   font-family: Raleway;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 22px;
   line-height: 26px;
 }

@@ -1,12 +1,16 @@
 .our-projects{
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
+    padding-top: 94px;
+    margin: 0 auto;
     margin-bottom: 95px;
 }
 
 .our-projects__title{
     display: none;
+}
+
+.our-projects__nav{
+    display: flex;
+    justify-content: center;
 }
