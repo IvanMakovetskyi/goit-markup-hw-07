@@ -1,9 +1,14 @@
+.our-projects{
+    @extend %container;
+    padding-top: 94px;
+    margin-bottom: 95px;
+}
+
 .list-nav{
     display: flex;
     margin-bottom: 50px;
-
+    justify-content: center;
 }
-
 
 .list-nav__link{
     transition: all 250ms $timing-function;

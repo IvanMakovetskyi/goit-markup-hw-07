@@ -60,6 +60,7 @@ a {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 textarea {
@@ -275,7 +276,12 @@ p {
   padding: 0;
 }
 
-.main-pynkts, .occupation, .comand, .clients {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-pynkts, .occupation, .comand--width, .clients, .our-projects {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -750,12 +756,7 @@ footer {
 }
 
 .comand {
-  padding-top: 94px;
-  height: 700px;
-  margin-bottom: 94px;
-}
-
-.comand--color {
+  padding: 94px 0;
   background-color: #F5F4FA;
 }
 
@@ -878,24 +879,8 @@ footer {
 }
 
 .our-projects {
-  width: 1200px;
-  padding: 0 15px;
   padding-top: 94px;
-  margin: 0 auto;
   margin-bottom: 95px;
-}
-
-.our-projects__title {
-  display: none;
-}
-
-.our-projects__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .list-nav {
@@ -903,6 +888,9 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .list-nav__link {

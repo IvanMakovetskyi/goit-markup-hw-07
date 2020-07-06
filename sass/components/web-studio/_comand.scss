@@ -1,12 +1,10 @@
 .comand{
-    @extend %container;
-    padding-top: 94px;
-    height: 700px;
-    margin-bottom: 94px;
+    padding: 94px 0;
+    background-color: #F5F4FA;
 }
 
-.comand--color{
-    background-color: #F5F4FA;
+.comand--width{
+    @extend %container;
 }
 
 .comand__title{
